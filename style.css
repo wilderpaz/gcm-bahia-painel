@@ -1,0 +1,53 @@
+/* Paleta de Cores e Tokens MOVAM-SE (Azul Marinho) */
+:root {
+    --navy-900: #072044; /* Dark Navy (Cor Principal) */
+    --navy-800: #0A3A62;
+    --navy-600: #1B5F88;
+    --accent: #6FB7FF; /* Highlight */
+    --muted-light: #F4F7FB; /* BG Light */
+    --text-dark: #0B1A2B;
+    --white: #FFFFFF;
+
+    --bg-primary: var(--muted-light);
+    --bg-secondary: var(--white);
+    --text-primary: var(--text-dark);
+    --color-primary: var(--navy-900);
+    --color-accent: var(--navy-600);
+    --color-highlight: var(--accent);
+}
+
+.dark {
+    --bg-primary: var(--navy-900);
+    --bg-secondary: var(--navy-800);
+    --text-primary: var(--white);
+    --color-primary: var(--accent);
+    --color-accent: var(--white);
+    --color-highlight: var(--accent);
+}
+
+/* Aplica as transições para tema suave */
+body, header, main, footer, .card, .input, select, button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilo da Tabela para maior legibilidade */
+.table-header {
+    background-color: var(--color-primary);
+    color: var(--white);
+    border-radius: 0.5rem 0.5rem 0 0;
+    cursor: pointer;
+}
+
+/* Estilo para o background com a logo */
+.dashboard-bg {
+    /* Fundo claro */
+    background-image: linear-gradient(rgba(244, 247, 251, 0.95), rgba(244, 247, 251, 0.95)), url("https://placehold.co/1000x1000/F4F7FB/0A3A62?text=MOVAM-SE+BG");
+    background-repeat: repeat;
+    background-size: 300px;
+    background-position: center center;
+    background-blend-mode: soft-light;
+}
+.dark .dashboard-bg {
+    /* Fundo escuro */
+    background-image: linear-gradient(rgba(7, 32, 68, 0.98), rgba(7, 32, 68, 0.98)), url("https://placehold.co/1000x1000/0A3A62/F4F7FB?text=MOVAM-SE+BG");
+}
