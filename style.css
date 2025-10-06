@@ -38,9 +38,10 @@ body, header, main, footer, .card, .input, select, button {
     cursor: pointer;
 }
 
-/* Estilo para o background com a logo */
+
+/* Estilo para o background com a logo 
 .dashboard-bg {
-    /* Fundo claro */
+    Fundo claro 
     background-image: linear-gradient(rgba(244, 247, 251, 0.95), rgba(244, 247, 251, 0.95)), url("https://placehold.co/1000x1000/F4F7FB/0A3A62?text=MOVAM-SE+BG");
     background-repeat: repeat;
     background-size: 300px;
@@ -48,6 +49,7 @@ body, header, main, footer, .card, .input, select, button {
     background-blend-mode: soft-light;
 }
 .dark .dashboard-bg {
-    /* Fundo escuro */
+    Fundo escuro 
     background-image: linear-gradient(rgba(7, 32, 68, 0.98), rgba(7, 32, 68, 0.98)), url("https://placehold.co/1000x1000/0A3A62/F4F7FB?text=MOVAM-SE+BG");
 }
+*/
