@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Interativo MOVAM-SE | GCM Bahia</title>
+    <!-- Carrega CDNs -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body class="font-inter bg-bg-primary text-text-primary min-h-screen">
+
+    <!-- ESTRUTURA HTML PRINCIPAL -->
+
+    <!-- 1. Header Fixo -->
+    <header class="sticky top-0 z-10 bg-bg-secondary shadow-md border-b border-color-primary/10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center space-x-3">
+                <img src="https://placehold.co/50x50/072044/6FB7FF?text=LOGO" alt="Logo MOVAM-SE" class="h-10 w-10 rounded-lg shadow-inner">
+                <h1 class="text-lg sm:text-xl font-extrabold text-color-primary hidden sm:block">
+                    MOVAM-SE Dashboard
+                </h1>
+            </div>
+            <nav class="flex items-center space-x-2 sm:space-x-4">
+                <button id="nav-dashboard" class="text-sm font-semibold p-2 rounded-md text-highlight bg-color-primary/20" onclick="setPage('dashboard')">
+                    Infográfico
+                </button>
+                <button id="nav-movam-se" class="text-sm font-semibold p-2 rounded-md text-text-primary hover:bg-color-primary/10" onclick="setPage('movam-se')">
+                    Destaque MOVAM-SE
+                </button>
+                <button id="theme-toggle" class="p-2 rounded-full bg-color-primary/10 text-text-primary hover:bg-color-primary/20" onclick="toggleTheme()" aria-label="Alternar tema claro/escuro">
+                    🌙
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Main Content Container (onde o JS injeta o conteúdo) -->
+    <main id="app-content" class="container mx-auto p-4 md:p-8">
+        <!-- Conteúdo dinâmico será injetado pelo script.js -->
+    </main>
+
+    <!-- 3. Elemento de Feedback (Substitui o alert/confirm) -->
+    <div id="custom-message" class="fixed bottom-5 right-5 z-50 transition-all duration-300 opacity-0 transform translate-y-10"></div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
 
